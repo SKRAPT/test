@@ -1,0 +1,14 @@
+{
+  "id": "muitohentai-online-streaming",
+  "name": "PT | Muito Hentai (18+)",
+  "version": "1.2.3",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "author": "egame",
+  "lang": "pt",
+  "description": "Onlinestream provider for MuitoHentai.com, subbed in PT.",
+  "icon": "https://www.muitohentai.com/favicon.ico",
+  "website": "https://www.muitohentai.com",
+  "payloadURI": "https://raw.githubusercontent.com/SEU_USUARIO/seanime-extensions/main/src/anime/muitohentai/provider.ts",
+  "manifestURI": "https://raw.githubusercontent.com/SEU_USUARIO/seanime-extensions/main/src/anime/muitohentai/manifest.json"
+}
