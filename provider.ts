@@ -35,7 +35,7 @@ class Provider {
     return title
       .toLowerCase()
       .normalize('NFD')
-      .replace(/[̀-ͯ]/g, '')
+      .replace(/[-]/g, '')
       .replace(/&/g, ' ')
       .replace(/[:;,_\-.!?()\[\]{}"'`~@#$%^*+=|\/]+/g, ' ')
       .replace(/\s+/g, ' ')
@@ -230,7 +230,7 @@ class Provider {
 
       const text = el.text().trim()
       let number = episodes.length + 1
-      const match = text.match(/epis[oóô]dio\s*(\d+)/i) || href.match(/episodio-(\d+)/i)
+      const match = text.match(/epis[ooo]dio\s*(\d+)/i) || href.match(/episodio-(\d+)/i)
       if (match) number = parseInt(match[1], 10)
 
       const key = String(number) + '|' + absoluteHref
@@ -240,7 +240,7 @@ class Provider {
       episodes.push({
         id: absoluteHref,
         number,
-        title: text || ('Episódio ' + number),
+        title: text || ('Episodio ' + number),
         url: absoluteHref
       });
     });
